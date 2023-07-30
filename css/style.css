@@ -1,0 +1,573 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #e1d3d9;
+    direction: rtl;
+}
+
+/*********************** Start header *******************/
+header {
+    width: 100%;
+    max-width: 1920px;
+    height: 150px;
+    background-color: #e40427;
+}
+
+header nav {
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .logo {
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    font-family: 'Tajawal', sans-serif;
+}
+
+header nav ul .active {
+    padding: 10px 20px;
+    border-radius: 50%;
+    background-color: #fa405d;
+}
+
+header nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 22px;
+    padding: 10px 20px;
+    font-size: 30px;
+}
+
+header nav ul li:hover {
+    transform: scale(1.1);
+}
+
+header nav ul li a:hover {
+    border-radius: 50%;
+    background-color: #fa405d;
+}
+
+
+@media (max-width: 715px) {
+
+    header nav>ul {
+        position: fixed;
+        bottom: 0;
+        width: 95%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #5e3d59;
+        margin: 10px auto;
+        padding: 15px;
+        z-index: 100;
+        border-radius: 15px;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+}
+
+
+/*********************** End header *******************/
+
+
+/*********************** Start Main *******************/
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #e1d3d9;
+}
+
+.main .content-main {
+    width: 95%;
+    min-height: 100vh;
+    margin: auto;
+    position: relative;
+    top: -60px;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 0 0 2px black;
+    padding: 30px 0;
+}
+
+.main .content-main .content {
+    width: 95%;
+    min-height: 100vh;
+    margin: auto;
+}
+
+.main .content-main .content .war1 p,
+.war2 p {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+.main .content-main .content .war1 h1{
+    display: block;
+}
+.main .content-main .content .war1 {
+    width: 100%;
+    padding: 20px;
+    background-color: #f2cdde;
+    border-radius: 10px;
+    margin: 0 0 10px 0;
+    text-align: center;
+    display: flex;
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.main .content-main .content .war1 i:hover {
+    transform: scale(1.7);
+}
+
+.main .content-main .content .war2 i:hover {
+    transform: scale(1.7);
+}
+
+.main .content-main .content .war1:hover {
+    background-color: #f7ebf0;
+}
+
+.main .content-main .content .war2:hover {
+    background-color: #f7ebf0;
+}
+
+.main .content-main .content .apps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+
+/***************** Start images **************/
+
+.images-blat{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.images-blat img{
+    width: 300px;
+    height: 200px;
+    margin: 15px;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.images-blat img:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width: 709px) {
+    .images-blat img{
+        width: 80%;
+    }
+
+}
+
+/***************** End images**************/
+
+
+/************ Flip front **********/
+
+.main .content-main .content .apps .flip-card .flip-card-inner .flip-card-front img {
+    width: 100px;
+    height: 100px;
+    /* background-image: url(../images/01.png);
+    background-position: center;
+    background-size: cover; */
+    margin-bottom: 15px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: #e40427;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 60px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px black;
+}
+
+
+
+
+
+.main .content-main .content .apps .flip-card .flip-card-inner .flip-card-front p {
+    color: black;
+    text-align: center;
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 500;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    font-family: 'Tajawal', sans-serif;
+}
+
+
+
+
+
+/************ Flip Back **********/
+
+.main .content-main .content .apps .flip-card .flip-card-inner .flip-card-back h4 {
+    margin-top: 50px;
+    font-size: 22px;
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 700;
+}
+
+.main .content-main .content .apps .flip-card .flip-card-inner .flip-card-back p {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 500;
+}
+
+.main .content-main .content .apps .flip-card .flip-card-inner .flip-card-back p.number {
+    background-color: #fa405d;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.main .content-main .content .apps .flip-card .flip-card-inner .flip-card-back a {
+    color: white;
+}
+
+.main .content-main .content .apps .flip-card .flip-card-inner .flip-card-back p a {
+    text-decoration: none;
+}
+
+.main .content-main .content .apps .flip-card .flip-card-inner .flip-card-back p a:hover {
+    color: black;
+}
+
+
+
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 200px;
+    margin: 30px 10px;
+    perspective: 1000px;
+    cursor: pointer;
+    border-radius: 20px;
+
+}
+
+.flip-card .flip-card-inner .card1-front{
+    background-image: url(../images/front1.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: 999;
+}
+
+
+.flip-card .flip-card-inner .card1-back{
+    background-image: url(../images/back2.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: 999;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 7px black;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+
+
+}
+
+/* Position the front and back side */
+.flip-card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 7px black;
+    border-radius: 20px;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+    background-image: url(../images/bg.png);
+    color: black;
+}
+
+
+/* Style the back side */
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 7px black;
+    border-radius: 20px;
+    color: black;
+    transform: rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+    background-image: url(../images/heart.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+/*********************** End Main *******************/
+
+
+/************************ Start Footer *************/
+
+footer {
+    width: 100%;
+    height: 150px;
+    background-color: #e40427;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+footer .footer-text {
+    color: white;
+
+}
+
+footer .footer-text h2 {
+    background-color: #fa405d;
+    font-family: 'Tajawal', sans-serif;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+footer .footer-text h2 span {
+    font-family: 'Tajawal', sans-serif;
+    color: black;
+}
+
+/************************ End Footer *************/
+
+@media (max-width: 715px) {
+
+    .main .content-main .content .war1,
+    .war2 {
+        height: auto;
+        padding: 10px 10px;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .main .content-main {
+        margin-bottom: 50px;
+    }
+
+
+}
+
+
+@media (max-width: 598px) {
+    .main .content-main .content .apps .flip-card {
+        width: 90%;
+    }
+
+    .main .content-main .content .apps .flip-card .flip-card-inner .flip-card-front img {
+        width: 100px;
+        height: 100px;
+        font-size: 40px;
+    }
+
+    .main .content-main {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 445px) {
+
+    .main .content-main .content .apps .flip-card {
+        width: 100%;
+    }
+
+    header nav ul li.no_nav {
+        display: none;
+    }
+
+    .main .content-main {
+        margin-bottom: 50px;
+    }
+
+}
+
+
+
+/********************** About Style *************************/
+
+.main-about {
+    width: 100%;
+    min-height: 60vh;
+    background-color: #e1d3d9;
+}
+
+.main-about .content-main-about {
+    width: 95%;
+    min-height: 60vh;
+    margin: auto;
+    position: relative;
+    top: -60px;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 0 0 2px black;
+    padding: 30px 0;
+}
+
+/* 
+.main-about .content-main-about .content-about{
+    width: 95%;
+    min-height: 50vh;
+} */
+
+
+.main-about .content-main-about .content-about .cont-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card-about {
+    background-color: transparent;
+    width: 700px;
+    height: 400px;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+    cursor: pointer;
+    padding: 30px;
+
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner-about {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card-about:hover .flip-card-inner-about {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front-about,
+.flip-card-back-about {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+    border-radius: 20px;
+    padding: 20px;
+    /* font-family: 'Tajawal', sans-serif; */
+    box-shadow: 0 0 7px black;
+}
+
+
+.flip-card-back-about h1,
+h3,
+p {
+    font-family: 'Tajawal', sans-serif;
+}
+
+.flip-card-back-about img {
+    border-radius: 50%;
+    width: 120px;
+    box-shadow: 0 0 10px black;
+}
+
+
+.flip-card-front-about img {
+    border-radius: 50%;
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px black;
+
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front-about {
+    color: black;
+    background-image: url(../images/bg1.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Style the back side */
+.flip-card-back-about {
+    color: black;
+    transform: rotateY(180deg);
+    background-image: url(../images/heart2.png);
+    background-position: center;
+    background-size: cover;
+}
